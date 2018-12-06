@@ -15,3 +15,4 @@ Repository for a task given to new interns at Vicara. Find instructions in the R
 ### Wireframe
 * Use this wireframe for your reference. You can be as creative as you want but the basic layout should be as given below.
 ￼
+![alt text](https://user-images.githubusercontent.com/14963382/49579213-acc4cf00-f971-11e8-92a2-6ccf4bc5bf39.png)
