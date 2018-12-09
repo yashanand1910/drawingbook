@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+	 <title>Drawing Book</title>
+	 <link rel="stylesheet" href="css/new.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+	 <div id="container">
+	     <a href="page1.html">page1</a>&nbsp;
+	     <a href="page2.html">page2</a>&nbsp;
+	     <a href="page3.html">page3</a>&nbsp;
+	     <a href="newpage.html" style="margin-left:730px">New page</a>
+     </div>
+     <div id="text">
+     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"><b>C</b></p>
+     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="1.2s"><b>O</b></p>
+     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="2s"><b>L</b></p>
+     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="2.5s"><b>O</b></p>
+     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="3s"><b>R</b></p>
+     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="3.5s"><b>S</b></p>
+     </div>
+     <br/>
+     <div id="colors">
+     	<input type="button" class="rounded-circle" style="background-color:#FF0000"/><br/>
+     	<input type="button" class="rounded-circle" style="background-color:#7FFF00"/><br/>
+     	<input type="button" class="rounded-circle" style="background-color:#0000FF"/><br/>
+     	<input type="button" class="rounded-circle" style="background-color:#FFA500"/><br/>
+     	<input type="button" class="rounded-circle" style="background-color:#A52A2A"/><br/>
+     	<input type="button" class="rounded-circle" style="background-color:#FFC0CB"/>
+     </div>
+    <canvas id="mycanvas" width="1024" height="600" style="border:2px solid #808080"></canvas>
+    <div id="footer">
+    	<input type="button" class="wow pulse" data-wow-iteration="5" value="Erase">&nbsp;
+    	<input type="button" class="wow pulse" data-wow-iteration="5" value="Clear">
+    </div>
+    <script src="js/wow.min.js"></script>
+		 <script>
+             new WOW().init();
+         </script>
+</body>
+</html>
