@@ -1,0 +1,64 @@
+#mycanvas
+{
+	margin-top:-520px;
+   margin-left:95px;
+}
+#container
+{
+	margin-top:10px;
+	margin-left:100px;
+}
+#container a
+{
+	text-decoration:none;
+	margin-left:10px;
+}
+#footer
+{
+	margin-left:1000px;
+	margin-top:2px;
+}
+#colors
+{
+	margin-left:50px;
+	margin-top:-280px;
+}
+#colors input
+{
+	width:30px;
+	line-height:32px;
+	border-color:black;
+}
+#text
+{
+	margin-left:20px;
+	margin-top:280px;
+	font-size:18px;
+}
+#mycanvas1
+{
+	margin-left:100px;
+	margin-top:-420px;
+}
+#colors1
+{
+	margin-left:50px;
+	margin-top:-250px;
+}
+#colors1 input
+{
+	width:30px;
+	line-height:32px;
+	border-color:black;
+}
+#text1
+{
+	margin-left:20px;
+	margin-top:250px;
+	font-size:18px;
+}
+#mycanvas2
+{
+	margin-left:100px;
+	margin-top:-500px;
+}
