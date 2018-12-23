@@ -1,64 +1,51 @@
-#mycanvas
-{
-	margin-top:-520px;
-   margin-left:95px;
+#mycanvas {
+	border:2px solid black;
+	border-radius:15px;
+	margin-top:-390px;
 }
-#container
-{
-	margin-top:10px;
-	margin-left:100px;
+h1 {
+  font-color:#A9A9A9;
+  text-align:center;
 }
-#container a
-{
+#container {
+  margin-top:25px;
+}
+#container a{
 	text-decoration:none;
-	margin-left:10px;
+	color:#800080;
+	font-size:16px;
 }
-#footer
-{
-	margin-left:1000px;
-	margin-top:2px;
+#colors {
+	margin-top:140px;
 }
-#colors
-{
-	margin-left:50px;
-	margin-top:-280px;
+ul {	
+    list-style:none;
+    margin-left:185px;
 }
-#colors input
-{
-	width:30px;
-	line-height:32px;
-	border-color:black;
+ul li {
+	height:35px;
+	width:35px;
+	border-radius:60px;
+	margin:7px;
 }
-#text
-{
-	margin-left:20px;
-	margin-top:280px;
-	font-size:18px;
+.red {
+	background: #fc4c4f;
 }
-#mycanvas1
-{
-	margin-left:100px;
-	margin-top:-420px;
+.blue {
+	background: #4fa3fc;
 }
-#colors1
-{
-	margin-left:50px;
-	margin-top:-250px;
+.yellow {
+	background: #ECD13F;
 }
-#colors1 input
-{
-	width:30px;
-	line-height:32px;
-	border-color:black;
+.green{
+	background:#7CFC00;
 }
-#text1
-{
-	margin-left:20px;
-	margin-top:250px;
-	font-size:18px;
+.orange{
+	background:#FFA500;
 }
-#mycanvas2
-{
-	margin-left:100px;
-	margin-top:-500px;
+.violet{
+	background:#EE82EE;
+}
+.selected {
+	border:4px solid #384047;
 }

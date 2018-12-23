@@ -6,37 +6,30 @@
 	 <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
-	 <div id="container">
-	     <a href="page1.html">page1</a>&nbsp;
-	     <a href="page2.html">page2</a>&nbsp;
-	     <a href="page3.html">page3</a>&nbsp;
-	     <a href="newpage.html" style="margin-left:730px">New page</a>
+    <h1 class="wow slideOutDown">Canvas Drawing Book</h1>
+     <div id="container">
+         <center><a href="page1.html">page1</a>&nbsp;
+         <a href="page2.html">page2</a>&nbsp;
+         <a href="page3.html">page3</a">&nbsp;
+         <a href="newpage.html" style="margin-left:518px">New page</a></center>
      </div>
-     <div id="text">
-     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="1s"><b>C</b></p>
-     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="1.2s"><b>O</b></p>
-     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="2s"><b>L</b></p>
-     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="2.5s"><b>O</b></p>
-     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="3s"><b>R</b></p>
-     	<p class="wow zoomIn" data-wow-duration="1s" data-wow-delay="3.5s"><b>S</b></p>
-     </div>
-     <br/>
      <div id="colors">
-     	<input type="button" class="rounded-circle" style="background-color:#FF0000"/><br/>
-     	<input type="button" class="rounded-circle" style="background-color:#7FFF00"/><br/>
-     	<input type="button" class="rounded-circle" style="background-color:#0000FF"/><br/>
-     	<input type="button" class="rounded-circle" style="background-color:#FFA500"/><br/>
-     	<input type="button" class="rounded-circle" style="background-color:#A52A2A"/><br/>
-     	<input type="button" class="rounded-circle" style="background-color:#FFC0CB"/>
-     </div>
-    <canvas id="mycanvas" width="1024" height="600" style="border:2px solid #808080"></canvas>
-    <div id="footer">
-    	<input type="button" class="wow pulse" data-wow-iteration="5" value="Erase">&nbsp;
-    	<input type="button" class="wow pulse" data-wow-iteration="5" value="Clear">
-    </div>
-    <script src="js/wow.min.js"></script>
-		 <script>
-             new WOW().init();
-         </script>
+        <ul>
+           <li class="red selected wow flipOutY"></li>
+            <li class="blue wow flipOutY"  ></li>
+            <li class="yellow wow flipOutY"></li>
+            <li class="green wow flipOutY"></li>
+            <li class="orange wow flipOutY"></li>
+            <li class="violet wow flipOutY"></li>
+        </ul>       
+    <div>
+	 <center><canvas id="mycanvas" width="800" height="500"></canvas></center>
+     <script src="js/wow.min.js"></script>
+          <script>
+              new WOW().init();
+          </script>
+     <script src="https://code.jquery.com/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>  
+    
 </body>
 </html>
