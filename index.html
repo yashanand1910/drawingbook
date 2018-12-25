@@ -1,18 +1,22 @@
 <!doctype html>
 <head>
 	 <title>Drawing Book</title>
-	 <link rel="stylesheet" href="css/new.css">
+	 <link rel="stylesheet" href="css/style.css">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	 <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
     <h1 class="wow slideOutDown">Canvas Drawing Book</h1>
      <div id="container">
-         <center><a href="page1.html">page1</a>&nbsp;
-         <a href="page2.html">page2</a>&nbsp;
-         <a href="page3.html">page3</a">&nbsp;
-         <a href="newpage.html" style="margin-left:518px">New page</a></center>
+         
+        <center>
+        <ul>
+            <li class="pageLink" tab="1" onclick="pageLinkClick(1)"><a id="pagelink1">Page1</a>&nbsp;</li>  
+        </ul>   
+             
+         <a id="newpage" style="margin-left:518px" >New page</a></center>
      </div>
+    
      <div id="colors">
         <ul>
            <li class="red selected wow flipOutY"></li>
@@ -23,7 +27,16 @@
             <li class="violet wow flipOutY"></li>
         </ul>       
     <div>
-	 <center><canvas id="mycanvas" width="800" height="500"></canvas></center>
+        <div id="canvasArea">
+            <center>
+                <canvas id="mycanvas1" class="mycanvas" width="800" height="500"></canvas>
+            </center>       
+        </div>
+        
+	
+        
+     <button id="erasecavas" class="wow pulse" data-wow-iteration="3" >Eraser</button>
+     <button id="resetcanvas" class="wow pulse" data-wow-iteration="3">Clear</button>
      <script src="js/wow.min.js"></script>
           <script>
               new WOW().init();
