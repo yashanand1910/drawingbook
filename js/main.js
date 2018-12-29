@@ -30,18 +30,18 @@ $canvas.mousedown(function(e) {
 }).mouseleave(function() {
     $canvas.mouseup();
 });
-$('resetcanvas').click(function(context){
-    canvas.getContext('2d').clearRect(0,0,width,height);
-canvas.width = canvas.width;
-});
 
-$("#eraser").click(function() {
-        bErasing = true;
-    });
+//clearing canvas
+ document.getElementById('clearcanvas').addEventListener('click', function() {
+     context.clearRect(0,0, 800,500);}, false);
 
 
 
 
+
+
+
+//switching to multiple tabs
 var pageNum = 1;
 $("#newpage").click(function(){
     pageNum = pageNum +1;        
