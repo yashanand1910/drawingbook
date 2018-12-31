@@ -14,6 +14,11 @@ function myFunction() {
     var mywindow = window.open("index.html", "", "width=200,height=100");
 }
 
+//implementing eraser
+function eraser() {
+    return color="white";
+}
+
 $("#colors").on("click", "li", function() {
     $(this).siblings().removeClass("selected");
     $(this).addClass("selected");
