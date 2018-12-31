@@ -40,8 +40,11 @@ $canvas.mousedown(function(e) {
 
 
 
+<<<<<<< HEAD
 
 //switching to multiple tabs
+=======
+>>>>>>> b7244f587df6e3eec42eef02ce66b5b87bac78a1
 var pageNum = 1;
 $("#newpage").click(function(){
     pageNum = pageNum +1;        
@@ -57,7 +60,7 @@ $("#newpage").click(function(){
 
 });
 
-
+//TODO 
 function pageLinkClick(linkNumber) {
     
     
@@ -66,7 +69,7 @@ function pageLinkClick(linkNumber) {
     
     
     
-    
+   
     
 }
 
