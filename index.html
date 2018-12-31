@@ -7,14 +7,8 @@
 </head>
 <body>
     <h1 class="wow slideOutDown">Canvas Drawing Book</h1>
-     <div id="container">
-         
-        <center>
-        <ul>
-            <li class="pageLink" tab="1" onclick="pageLinkClick(1)"><a id="pagelink1">Page1</a>&nbsp;</li>  
-        </ul>   
-             
-         <a id="newpage" style="margin-left:518px" >New page</a></center>
+     <div id="container">    
+         <a onclick="myFunction()" style="margin-left:995px" class="wow zoomIn">New page</a></center>
      </div>
     
      <div id="colors">
@@ -26,17 +20,16 @@
             <li class="orange wow flipOutY"></li>
             <li class="violet wow flipOutY"></li>
         </ul>       
-    <div>
+    </div>
         <div id="canvasArea">
             <center>
                 <canvas id="mycanvas1" class="mycanvas" width="800" height="500"></canvas>
             </center>       
         </div>
-        
-	
-        
-     <button id="erasecavas" class="wow pulse" data-wow-iteration="3" >Eraser</button>
-     <button  id="clearcanvas">clear</button>
+   <div>
+        <button  id="clearcanvas" style="margin-left:1015px" class="wow zoomIn" >clear</button>
+    </div>
+
      <script src="js/wow.min.js"></script>
           <script>
               new WOW().init();
