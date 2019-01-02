@@ -11,7 +11,7 @@ var bErasing = false;
 
 //new window
 function myFunction() {
-    var mywindow = window.open("index.html", "", "width=200,height=100");
+    var mywindow = window.open("index.html");
 }
 
 //implementing eraser
