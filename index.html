@@ -6,11 +6,29 @@
 	 <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
-    <h1 class="wow slideOutDown">Canvas Drawing Book</h1>
-     <div id="container">    
-         <a onclick="myFunction()" style="margin-left:995px" class="wow zoomIn">New page</a></center>
-     </div>
-    
+    <h1 class="wow zoomIn" data-wow-duration="2s">Canvas Drawing Book</h1>   
+         
+     <div id="container">
+      
+     
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                <button id="btn-add-tab" type="button" class="btn btn-primary pull-right" style="margin-left:950px;margin-bottom:2px;border-bottom:1px solid gray"> new page</button>
+            </p>
+            <!-- Nav tabs -->
+            <ul id="tab-list" class="nav nav-tabs" role="tablist" style="border-bottom:none;margin-top:-60px;margin-left:290px" >
+                <li class="active"><a href="#tab1" role="tab" data-toggle="tab" style="margin-left:10px">Tab1</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div id="tab-content" class="tab-content">
+                <div class="tab-pane fade in active" id="tab1">Tab1 content</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--colors-->    
      <div id="colors">
         <ul>
            <li class="red selected wow flipOutY"></li>
@@ -27,8 +45,8 @@
             </center>       
         </div>
    <div>
-        <button  id="clearcanvas" style="margin-left:950px" class="wow zoomIn" >clear</button>
-        <button id="erasecanvas" onclick="eraser()" style="margin-top:-2px" class="wow zoomIn">Eraser</button>
+        <button  id="clearcanvas" style="margin-left:950px" class="selected wow zoomIn" >clear</button>
+        <button id="erasecanvas" onclick="eraser()" style="margin-top:-2px" class="selected wow zoomIn">Eraser</button>
     </div>
 
      <script src="js/wow.min.js"></script>
