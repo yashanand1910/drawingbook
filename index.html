@@ -1,18 +1,34 @@
 <!doctype html>
 <head>
 	 <title>Drawing Book</title>
-	 <link rel="stylesheet" href="css/new.css">
+	 <link rel="stylesheet" href="css/style.css">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	 <link rel="stylesheet" href="css/animate.min.css">
 </head>
 <body>
-    <h1 class="wow slideOutDown">Canvas Drawing Book</h1>
+    <h1 class="wow zoomIn" data-wow-duration="2s">Canvas Drawing Book</h1>   
+         
      <div id="container">
-         <center><a href="page1.html">page1</a>&nbsp;
-         <a href="page2.html">page2</a>&nbsp;
-         <a href="page3.html">page3</a">&nbsp;
-         <a href="newpage.html" style="margin-left:518px">New page</a></center>
-     </div>
+      
+     
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                <button id="btn-add-tab" type="button" class="btn btn-primary pull-right" style="margin-left:950px;margin-bottom:2px;border-bottom:1px solid gray">New page</button>
+            </p>
+            <!-- Nav tabs -->
+            <ul id="tab-list" class="nav nav-tabs" role="tablist" style="border-bottom:none;margin-top:-60px;margin-left:290px" >
+                <li class="active topTab" id="tab1"><a href="#tab1" role="tab" data-toggle="tab" style="margin-left:10px">Tab1</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div id="tab-content" class="tab-content">
+                <div class="tab-pane fade in active" id="tab1">Tab1 content</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--colors-->    
      <div id="colors">
         <ul>
            <li class="red selected wow flipOutY"></li>
@@ -22,8 +38,17 @@
             <li class="orange wow flipOutY"></li>
             <li class="violet wow flipOutY"></li>
         </ul>       
-    <div>
-	 <center><canvas id="mycanvas" width="800" height="500"></canvas></center>
+    </div>
+        <div id="canvasArea">
+            <center id="canvasAreaCenter">
+                <canvas id="canvas1" class="mycanvas" width="800" height="500"></canvas>
+            </center>       
+        </div>
+   <div>
+        <button  id="clearcanvas" style="margin-left:950px" class="selected wow zoomIn" >clear</button>
+        <button id="erasecanvas" onclick="eraser()" style="margin-top:-2px" class="selected wow zoomIn">Eraser</button>
+    </div>
+
      <script src="js/wow.min.js"></script>
           <script>
               new WOW().init();
