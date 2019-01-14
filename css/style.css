@@ -58,14 +58,14 @@ ul li {
 #clearcanvas {
 	background-color:red;
 	color:white;
-	border-radius:30px;
-	border:2px solid black;
+	border-radius:8px;
+	border:2px solid gray;
 }
 #erasecanvas {
 	background-color:red;
 	color:white;
-	border-radius:30px;
-	border:2px solid black;
+	border-radius:8px;
+	border:2px solid gray;
 }
 .hide{
 	display: none;

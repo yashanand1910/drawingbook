@@ -11,14 +11,14 @@ $(document).ready(function () {
             var tabID = 1;
             $('#btn-add-tab').click(function () {
                 tabID++;
-                 $('#tab-list').append($('<li class="topTab" id="tab  '+tabID+'" ><a id='+tabID+'href="#tab' + tabID + '" role="tab" data-toggle="tab">Tab' + tabID + '<button class="close" type="button" title="Remove this page">x</button></a></li>'));
+                 $('#tab-list').append($('<li class="topTab" id="tab'+tabID+'" ><a id='+tabID+'href="#tab' + tabID + '" role="tab" data-toggle="tab">Tab' + tabID + '<button class="close" type="button" title="Remove this page">x</button></a></li>'));
                 $('#tab-content').append($('<div class="tab-pane fade " id="tab' + tabID +'">Tab '+ tabID +' content</div>'));
                 var id ="tab" + tabID ;
                 var x=document.createElement("canvas");
-                x.style.border="1px solid black";
-                x.style.width="800px";
+                x.border="2px solid black";
+                x.width="800";
                 x.id="canvas"+tabID;
-                x.style.height="1500";
+                x.height="500";
                 document.getElementById("canvasAreaCenter").appendChild(x);
                 hideOtherTabs(tabID);
                 tabSelected(tabID);
@@ -56,14 +56,16 @@ function tabSelected(id){
 //implementing eraser
 function eraser() {
     return color="white";
+
 }
+
 function hideOtherTabs(j){
     var tabs = document.getElementsByTagName('canvas');
     for(var i=0;i<tabs.length;i++){
         tabs[i].classList='mycanvas';
         tabs[i].classList.add('hide');
     }
-   var cId='canvas'+j.trim();
+    var cId='canvas'+j;
    document.getElementById(cId).classList='mycanvas';
 }
 $("#colors").on("click", "li", function() {
@@ -95,6 +97,7 @@ $canvas.mousedown(function(e) {
  $('.topTab').click(function (e) {
                  var id=e.currentTarget.id.substring(3);
                    hideOtherTabs(id); 
+                   tabSelected(id);
               });
 }
 
